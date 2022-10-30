@@ -39,7 +39,7 @@ public class Main {
         int count = 0;
 
         Scanner input = new Scanner(System.in);
-        System.out.println("Задача: угадать 2 числа (от 1 до 15 и от 0 до 5)");
+        System.out.println("Задача: угадать 2 числа (от 1 до 15 и от 0 до 5) \n");
 
         int num1 = (int) Math.floor(Math.random() * 15 + 1);
         int num2 = (int) Math.floor(Math.random() * 6);
@@ -48,29 +48,29 @@ public class Main {
             count++;
 
             if (userNum1 != num1) {
-                System.out.println("Введите 1 число: ");
+                System.out.print("Введите первое число: ");
 
                 userNum1 = input.nextInt();
 
                 if (userNum1 > num1) {
-                    System.out.println("1 число меньше");
+                    System.out.println("первое число меньше \n");
                 } else if (userNum1 < num1) {
-                    System.out.println("1 число больше");
+                    System.out.println("первое число больше \n");
                 } else {
-                    System.out.println("Вы угадали первое число");
+                    System.out.println("Вы угадали первое число \n");
                 }
             }
             if (userNum2 != num2) {
-                System.out.println("Введите 2 число: ");
+                System.out.print("Введите второе число: ");
 
                 userNum2 = input.nextInt();
 
                 if (userNum2 > num2) {
-                    System.out.println("2 число меньше");
+                    System.out.println("второе число меньше \n");
                 } else if (userNum2 < num2) {
-                    System.out.println("2 число больше");
+                    System.out.println("второе число больше \n");
                 } else {
-                    System.out.println("Вы угадали второе число");
+                    System.out.println("Вы угадали второе число \n");
                 }
             }
 
@@ -81,7 +81,7 @@ public class Main {
 
 
     public static void main(String[] args) {
-        System.out.println("Выберите вариант решения: \n '1' - угадывать одно число \n '2' - угадывать два числа");
+        System.out.println("Выберите вариант игры: \n '1' - угадывать одно число \n '2' - угадывать два числа");
         Scanner input = new Scanner(System.in);
         int solN = input.nextInt();
         if (solN == 1) {
@@ -91,8 +91,3 @@ public class Main {
         }
     }
 }
-/*
-Компьютер должен загадать число от 0 до 5000
-Пользователю нужно угадать это число
-В программе должен вестись подсчет кол-ва попыток
- */
