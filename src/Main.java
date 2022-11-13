@@ -29,10 +29,11 @@ public class Main {
                 }
                 System.out.println(wordMask);
             } else {
-                System.out.println("Такой буквы нет в слове!");
+                System.out.println("Такой буквы нет в слове.");
             }
 
         } while (wordMask.contains("_"));
+        System.out.println("Вы угадали слово!");
     }
 
     public static void main(String[] args) {
